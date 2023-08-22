@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang = "eng">
+<head>
+  <title> Sport News </title>
+  <link rel = "stylesheet" href = css/style.css>
+  <link href = "https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel = "stylesheet" integrity = "sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin = "anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <meta charset='utf-8' />
+      <link href='fullcalendar/main.css' rel='stylesheet' />
+      <script src='fullcalendar/main.js'></script>
+      <script>
+
+  document.addEventListener('DOMContentLoaded', function() {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+      initialView: 'dayGridMonth',
+      initialDate: '2021-02-07',
+      headerToolbar: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'dayGridMonth,timeGridWeek,timeGridDay'
+      },
+      events: [
+        {
+          title: 'HORNETS VS ROCKETS',
+          start: '2021-02-01',
+          url: 'https://www.youtube.com/watch?v=qzEneqNoxeU&feature=onebox&ab_channel=MotionStation'
+        }
+      ]
+    });
+
+    calendar.render();
+  });
+
+</script>
+</head>
+<body>
+  <header>
+    <div class = "header">
+      <center> <img src = "images/logo5.png" width = "200" height = "200"> </center>
+    </div>
+  </header>
+  <nav class = "navbar navbar-expand-md bg-white shadow-lg p-3 mb-5 bg-body rounded">
+      <div class = "collapse navbar-collapse" id = "main-navigation">
+        <ul class = "navbar-nav">
+          <li class = "nav-item p-2"> <a class = "nav-link text-dark" href = "page1.html" target = "_blank" id = "underline"> MAIN PAGE </a> </li>
+          <li class = "nav-item p-2"> <a class = "nav-link text-dark" href = "football.html" target = "_blank" id = "underline"> FOOTBALL </a> </li>
+          <li class = "nav-item p-2"> <a class = "nav-link text-dark" href = "basketball.html" target = "_blank" id = "underline"> BASKETBALL </a> </li>
+          <li class = "nav-item p-2"> <a class = "nav-link text-dark" href = "tennis.html" target = "_blank" id = "underline"> TENNIS </a> </li>
+          <li class = "nav-item p-2"> <a class = "nav-link text-dark" href = "baseball.html" target = "_blank" id = "underline"> BASEBALL </a> </li>
+          <li class = "nav-item p-2"> <a class = "nav-link text-white bg-dark" href = "um.html" target = "_blank" id = "underline"> UPCOMING MATCHES </a> </li>
+          <li class = "nav-item p-2"> <a class = "nav-link text-dark" href = "#footer" target = "_blank" id = "underline"> CONTACT INFO </a> </li>
+        </ul>
+      </div>
+  </nav>
+  <div class="container">
+  <div class="row">
+    <div class="col-12">
+      <div id='calendar'></div>
+    </div>
+    </div>
+    </div>
+<br> <br> <br>
+<footer class = "shadow-lg p-3 mb-5 bg-body rounded bg-dark">
+  <div id ="footer">
+    <center>
+    <a href = "https://www.instagram.com/happydramas/"> <img src = "images/instagram.svg" width = "40" height="40" id = "zoom"></a>NN
+    <a href = "https://www.facebook.com/campaign/landing.php?campaign_id=1637277981&extra_1=s%7Cc%7C313993343920%7Ce%7Cfacebook%7C&placement=&creative=313993343920&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1637277981%26adgroupid%3D62332975917%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1009806%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=CjwKCAiAjp6BBhAIEiwAkO9WukhHNn3A--WWZ_6Ontz9kU018PhPinPTkowmWNBo9z7quTRHzOFhHxoCyRcQAvD_BwE"><img src = "images/facebook.svg" width = "40" height="40" id = "zoom"></a>NN
+    <a href = "https://twitter.com/?lang=ru"><img src = "images/twitter.svg" width = "40" height="40" id = "zoom"></a>NN
+    <a href = "calendar.html"><img src = "images/map.png" width = "40" height="40" id = "zoom"></a>
+  </center>
+  </div>
+</footer>
+</body>
+</html>
